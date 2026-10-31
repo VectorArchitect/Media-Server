@@ -1,0 +1,54 @@
+# Running the Media Server
+
+## 1. Configure the media folder
+
+Open `media_server.py` and set `MEDIA_DIR` to the folder that contains your videos and images.
+
+Example:
+
+```python
+MEDIA_DIR = r"C:\Users\YourName\Videos"
+```
+
+Replace this example path with your own folder path.
+
+## 2. Start the server
+
+Open PowerShell or Command Prompt in the project folder and run:
+
+```powershell
+python media_server.py
+```
+
+On the same computer, open:
+
+```text
+http://127.0.0.1:6789
+```
+
+## 3. Access from your phone or another computer
+
+- Connect both devices to the same trusted Wi-Fi network.
+- Run `ipconfig` on the computer hosting the server.
+- Find its IPv4 Address.
+- On the other device, visit `http://YOUR-LAPTOP-IP:6789`.
+
+Replace `YOUR-LAPTOP-IP` with the IPv4 address shown by `ipconfig`.
+
+## 4. Change the port
+
+The default port is `6789`. To change it, edit:
+
+```python
+PORT = 6789
+```
+
+Choose an unused port and use that same port in the browser URL.
+
+## 5. Stop the server
+
+Press `Ctrl+C` in the terminal.
+
+## Security note
+
+The server has no authentication or HTTPS. Use it only on a trusted local network. Do not expose it to the public internet.
