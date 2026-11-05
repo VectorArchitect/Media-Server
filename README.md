@@ -71,6 +71,14 @@ Press `Ctrl+C` in the terminal where the server is running.
 
 This project is intended for use on a trusted local network. It does **not** implement user authentication, HTTPS, or access controls. Anyone who can reach the server may be able to browse and retrieve files from the configured media directory. Do not expose it directly to the public internet or forward its port on your router.
 
+## Tests
+
+The path-safety and media-scanning tests use Python's standard library. Run them from the repository root:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
 ## License
 
 This project is released under the MIT License. See [LICENSE](LICENSE).
