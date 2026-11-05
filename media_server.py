@@ -525,7 +525,7 @@ main {
 
     <div id="viewerTitle"></div>
 <div id="playerExtra" class="player-extra" hidden>
-  <div class="queue-actions"><button id="addQueueBtn">＋ Start queue with this video</button>  <button id="clearQueueBtn">Clear queue</button><span id="queueStatus"></span></div>
+  <div class="queue-actions"><button id="addQueueBtn">＋ Start queue with this video</button>  <button id="clearQueueBtn">Clear queue</button></div>
   <div class="queue-heading"><h3>Up next</h3><span id="queueStatus"></span></div>
   <div id="queueNowPlaying" class="queue-now"></div>
   <div id="queueList" class="queue-list"></div>
